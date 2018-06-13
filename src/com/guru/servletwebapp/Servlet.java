@@ -14,7 +14,6 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         String name=req.getParameter("name");
-        PrintWriter out=res.getWriter();
-        DAO dao=new DAO();
+
     }
 }

@@ -961,5 +961,12 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
+    <table id="241" parent="6" name="table1"/>
+    <column id="242" parent="241" name="FirstName">
+      <Position>1</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
   </database-model>
 </dataSource>

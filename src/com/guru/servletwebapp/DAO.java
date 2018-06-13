@@ -7,14 +7,14 @@ import java.sql.Statement;
 
 public class DAO {
     Connection connection=DBConnection.getConnection();
-    DAO(){
+    DAO(String string){
         if(connection==null){
             System.out.print("Failed");
         }
         else{
             try {
                 Statement statement=connection.createStatement();
-                int x=statement.executeUpdate("CREATE TABLE `test`.`table1` ( `FirstName` VARCHAR(30) NOT NULL ) ENGINE = InnoDB;");
+                int x=statement.executeUpdate("INSERT INTO `table1`(`FirstName`) VALUES ('string')");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
