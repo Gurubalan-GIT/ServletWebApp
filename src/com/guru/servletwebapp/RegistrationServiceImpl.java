@@ -7,7 +7,6 @@ public class RegistrationServiceImpl implements RegistrationService {
     @Override
     public int doRegistration(Bean bean) {
         DAO dao=new DAO();
-        int result=dao.doRegistration(bean);
-        return result;
+        return dao.doRegistration(bean);
     }
 }
