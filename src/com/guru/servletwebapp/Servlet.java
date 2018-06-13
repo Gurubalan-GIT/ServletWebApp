@@ -19,6 +19,7 @@ public class Servlet extends HttpServlet {
         String pass=req.getParameter("pass");
         String address=req.getParameter("address");
         String gender=req.getParameter("gender");
+        PrintWriter out=res.getWriter();
         Bean bean=new Bean();
         bean.setFn(fn);
         bean.setLn(ln);
@@ -26,5 +27,15 @@ public class Servlet extends HttpServlet {
         bean.setPass(pass);
         bean.setAddress(address);
         bean.setGender(gender);
+        RegistrationServiceImpl registrationService=new RegistrationServiceImpl();
+        int result=registrationService.doRegistration(bean);
+        if(result==0)
+        {
+            out.print("<html><body><h1>Success!</h1></body></html");
+        }
+        else
+        {
+            out.print("<html><body><h1>Failed!</h1></body></html");
+        }
     }
 }
