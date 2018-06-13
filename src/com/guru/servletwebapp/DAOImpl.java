@@ -1,13 +1,12 @@
 package com.guru.servletwebapp;
 
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-interface DAOInterface{
+interface DAO {
     public int doRegistration(Bean bean);
 }
-public class DAO implements DAOInterface{
+public class DAOImpl implements DAO {
     Connection connection=DBConnection.getConnection();
     int x;
     public int doRegistration(Bean bean){

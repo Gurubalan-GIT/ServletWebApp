@@ -6,7 +6,7 @@ interface RegistrationService{
 public class RegistrationServiceImpl implements RegistrationService {
     @Override
     public int doRegistration(Bean bean) {
-        DAO dao=new DAO();
-        return dao.doRegistration(bean);
+        DAOImpl daoImpl =new DAOImpl();
+        return daoImpl.doRegistration(bean);
     }
 }
