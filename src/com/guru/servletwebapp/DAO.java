@@ -14,7 +14,7 @@ public class DAO {
         else{
             try {
                 Statement statement=connection.createStatement();
-                int x=statement.executeUpdate("INSERT INTO `table1`(`FirstName`) VALUES ('string')");
+                int x=statement.executeUpdate("INSERT INTO `table1`(`FirstName`) VALUES ('"+string+"')");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
