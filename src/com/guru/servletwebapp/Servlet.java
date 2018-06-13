@@ -19,5 +19,12 @@ public class Servlet extends HttpServlet {
         String pass=req.getParameter("pass");
         String address=req.getParameter("address");
         String gender=req.getParameter("gender");
+        Bean bean=new Bean();
+        bean.setFn(fn);
+        bean.setLn(ln);
+        bean.setUn(un);
+        bean.setPass(pass);
+        bean.setAddress(address);
+        bean.setGender(gender);
     }
 }
