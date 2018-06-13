@@ -9,7 +9,7 @@ public class DAO {
     Connection connection=DBConnection.getConnection();
     DAO(){
         if(connection==null){
-            System.out.print("Failed!");
+            System.out.print("Failed");
         }
         else{
             try {
