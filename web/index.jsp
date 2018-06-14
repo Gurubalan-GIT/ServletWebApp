@@ -36,7 +36,7 @@
               <br/>
           </form>
       </div>
-  <script src="Script.js"></script>
-  <link rel="stylesheet" href="Style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
   </body>
 </html>
