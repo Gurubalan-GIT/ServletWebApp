@@ -1,3 +1,4 @@
+//Javascript Validation function.
 function validate() {
     if(document.forms["form"]["fn"].value===""){
         focus();
