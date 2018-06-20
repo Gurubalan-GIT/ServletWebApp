@@ -11,6 +11,10 @@ The entire web application is wrapped inside a `Tomcat server`. Visit here for t
 ## MySQL Server
 Apache servers of `XAMPP` are used for this along with `PhpMyAdmin`. Visit [here](https://www.apachefriends.org/download.html) for more information.
 
+## MySQL Connector
+You can use *any* lanuage actually. But to connect it to your MySQL Databse you need to load the Driver (in this case: `com.mysql.cj.mysql.Driver` package, where the Driver class is located.) by downloading the Connector JAR file 
+[here](https://dev.mysql.com/downloads/connector/j/).
+
 ## Servlets
 This is a Java class which extends HttpServlet and hence uses HTTP Protocols such as GET and POST methods through doGet and doPost methods. 
 We override these methods from the HttpServlet class and hence get the values from the Front-end components (HTML Components which are embedded
